@@ -8,6 +8,7 @@ import { SignUpComponent } from './user/sign-up/sign-up.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './footer/footer.component';
 
+import { defineLordIconElement } from "lord-icon-element";
 const routes: Routes = [
   { path: 'SignUp', component: SignUpComponent }
 ];  // <-- import RouterModule and define routes
@@ -16,13 +17,17 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     SignUpComponent,
-    FooterComponent
+    FooterComponent,
+    
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
     FormsModule,
     HttpClientModule,
+    
+   
+    
    
   ],
   providers: [],
