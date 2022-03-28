@@ -6,7 +6,7 @@
   -webkit-box-shadow: 0px 0px 7px 5px rgba(150, 150, 150, 0.57);
   -moz-box-shadow: 0px 0px 7px 5px rgba(150, 150, 150, 0.57);
   margin: auto;
-  margin-top: 10%;
+  margin-top: 7%;
   padding: 30px;
   width: 40%;
 }
@@ -68,6 +68,11 @@ input {
         height:auto;
         left: 0;
     
+  }
+
+  a{
+    text-decoration: none;
+   
   }
   @media screen and (max-width: 414px) {
     .box {
