@@ -15,14 +15,16 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AjouterAdminComponent } from './superAdmin/ajouter-admin/ajouter-admin.component';
 import { HomeComponent } from './home/home.component';
 import { ListAdminComponent } from './superAdmin/list-admin/list-admin.component';
+import { ProfilComponent } from './user/profil/profil.component';
 
 const routes: Routes = [
   { path:'', component: PwelcomeComponent },
   { path: 'SignUp', component: SignUpComponent },
   {path:"Login", component: LoginComponent},
-  { path: 'Ajouter_Admin', component: AjouterAdminComponent },
+  { path: 'ajouter_admin', component: AjouterAdminComponent },
   {path:'Home', component: HomeComponent},
   { path: 'liste_admin', component: ListAdminComponent },
+  { path: 'UserProfil', component: ProfilComponent },
 
 
 ];  // <-- import RouterModule and define routes
@@ -38,6 +40,7 @@ const routes: Routes = [
     AjouterAdminComponent,
     HomeComponent,
     ListAdminComponent,
+    ProfilComponent,
     
   ],
   imports: [
