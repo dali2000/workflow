@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { defineLordIconElement } from "lord-icon-element";
 import { PwelcomeComponent } from './pwelcome/pwelcome.component';
 import { LoginComponent } from './user/login/login.component';
+import { NavbarComponent } from './navbar/navbar.component';
 const routes: Routes = [
   { path:'', component: PwelcomeComponent },
   { path: 'SignUp', component: SignUpComponent },
@@ -24,6 +25,7 @@ const routes: Routes = [
     FooterComponent,
     PwelcomeComponent,
     LoginComponent,
+    NavbarComponent,
     
   ],
   imports: [
