@@ -32,30 +32,65 @@ button{
 }
 
 @media screen and (max-width: 767px) {
-    
+    .list{
+        margin-left: 20%;
+    }
     .card{
         width:20rem;
     }
     .row{
-       
+      
         margin-top:2%;
     }
  }
- @media screen and (max-width: 393px) {
-    
-    .card{
-        width:18rem;
+
+ @media screen and (max-width: 425px) {
+    .list{
+        margin-left: 10%;
     }
-   
+    .card{
+        width:20rem;
+    }
+    .row{
+      
+        margin-top:2%;
+    }
  }
 
- @media screen and (max-width: 356px) {
-    
+ @media screen and (max-width: 375px) {
+    .list{
+        margin-left: 1%;
+    }
+    .card{
+        width:20rem;
+    }
+    .row{
+      
+        margin-top:2%;
+    }
+ }
+
+
+ 
+
+ @media screen and (max-width: 340px) {
+    .list{
+        margin-left: 1%;
+    }
     .row{
       
         margin-top:2%;
     }
    
+ }
+
+ @media screen and (max-width: 320px) {
+    .list{
+        margin-left: 5%;
+    }
+    .card{
+        width:15rem;
+    }
  }
 
 
