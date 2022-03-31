@@ -57,19 +57,17 @@ body {
     opacity:1;
 }
 .form #img1{
-    margin-bottom: 5%;
     width: 200px;
 }
 
 .form #img2{
-    margin-top:45%;
-    margin-left:-5%;
+   
     width: 200px;
 }
 .form #img3{
-    margin-left:-10%;
+    
     width: 200px;
-    margin-bottom: 5%;
+   
 }
 
 
