@@ -13,12 +13,14 @@ import { PwelcomeComponent } from './pwelcome/pwelcome.component';
 import { LoginComponent } from './user/login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AjouterAdminComponent } from './superAdmin/ajouter-admin/ajouter-admin.component';
+import { ListAdminComponent } from './superAdmin/list-admin/list-admin.component';
 
 const routes: Routes = [
   { path:'', component: PwelcomeComponent },
   { path: 'SignUp', component: SignUpComponent },
   {path:"Login", component: LoginComponent},
   { path: 'Ajouter_Admin', component: AjouterAdminComponent },
+  { path: 'liste_admin', component: ListAdminComponent },
 
 
 ];  // <-- import RouterModule and define routes
@@ -32,6 +34,7 @@ const routes: Routes = [
     LoginComponent,
     NavbarComponent,
     AjouterAdminComponent,
+    ListAdminComponent,
     
   ],
   imports: [

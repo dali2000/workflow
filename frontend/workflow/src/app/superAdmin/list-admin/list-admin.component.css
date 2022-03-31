@@ -1,0 +1,19 @@
+
+.row{
+    margin-top:5%;
+}
+.list{
+
+    padding:5%;
+}
+
+.card-img{
+    padding: 5%;
+}
+p{
+   font-size:25px;
+  font-weight: bold;
+}
+button{
+    margin-top:2%;
+}
