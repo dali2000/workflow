@@ -21,18 +21,20 @@ import { ListEmployeeComponent } from './employee/list-employee/list-employee.co
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { ProfilComponent } from './user/profil/profil.component';
 
 const routes: Routes = [
   { path:'', component: PwelcomeComponent },
   { path: 'SignUp', component: SignUpComponent },
   {path:"Login", component: LoginComponent},
-  { path: 'Ajouter_Admin', component: AjouterAdminComponent },
+  { path: 'ajouter_admin', component: AjouterAdminComponent },
   {path:'Home', component: HomeComponent},
   { path: 'liste_admin', component: ListAdminComponent },
   { path: 'add_employee', component: AddEmployeeComponent },
   { path: 'add_entreprise', component: AddEntrepriseComponent },
   { path: 'list_employee', component: ListEmployeeComponent },
 
+  { path: 'UserProfil', component: ProfilComponent },
 
 
 ];  // <-- import RouterModule and define routes
@@ -51,8 +53,7 @@ const routes: Routes = [
     AddEmployeeComponent,
     AddEntrepriseComponent,
     ListEmployeeComponent,
-   
-
+    ProfilComponent,
     
   ],
   imports: [
