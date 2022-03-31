@@ -13,6 +13,7 @@ import { PwelcomeComponent } from './pwelcome/pwelcome.component';
 import { LoginComponent } from './user/login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AjouterAdminComponent } from './superAdmin/ajouter-admin/ajouter-admin.component';
+import { HomeComponent } from './home/home.component';
 import { ListAdminComponent } from './superAdmin/list-admin/list-admin.component';
 
 const routes: Routes = [
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'SignUp', component: SignUpComponent },
   {path:"Login", component: LoginComponent},
   { path: 'Ajouter_Admin', component: AjouterAdminComponent },
+  {path:'Home', component: HomeComponent},
   { path: 'liste_admin', component: ListAdminComponent },
 
 
@@ -34,6 +36,7 @@ const routes: Routes = [
     LoginComponent,
     NavbarComponent,
     AjouterAdminComponent,
+    HomeComponent,
     ListAdminComponent,
     
   ],
