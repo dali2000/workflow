@@ -8,13 +8,19 @@ import { SignUpComponent } from './user/sign-up/sign-up.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './footer/footer.component';
 
-import { defineLordIconElement } from "lord-icon-element";
+
 import { PwelcomeComponent } from './pwelcome/pwelcome.component';
 import { LoginComponent } from './user/login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AjouterAdminComponent } from './superAdmin/ajouter-admin/ajouter-admin.component';
 import { HomeComponent } from './home/home.component';
 import { ListAdminComponent } from './superAdmin/list-admin/list-admin.component';
+import { AddEmployeeComponent } from './employee/add-employee/add-employee.component';
+import { AddEntrepriseComponent } from './entreprise/add-entreprise/add-entreprise.component';
+import { ListEmployeeComponent } from './employee/list-employee/list-employee.component';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 const routes: Routes = [
   { path:'', component: PwelcomeComponent },
@@ -23,6 +29,10 @@ const routes: Routes = [
   { path: 'Ajouter_Admin', component: AjouterAdminComponent },
   {path:'Home', component: HomeComponent},
   { path: 'liste_admin', component: ListAdminComponent },
+  { path: 'add_employee', component: AddEmployeeComponent },
+  { path: 'add_entreprise', component: AddEntrepriseComponent },
+  { path: 'list_employee', component: ListEmployeeComponent },
+
 
 
 ];  // <-- import RouterModule and define routes
@@ -38,6 +48,11 @@ const routes: Routes = [
     AjouterAdminComponent,
     HomeComponent,
     ListAdminComponent,
+    AddEmployeeComponent,
+    AddEntrepriseComponent,
+    ListEmployeeComponent,
+   
+
     
   ],
   imports: [
@@ -45,7 +60,8 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     FormsModule,
     HttpClientModule,
-    
+    BrowserAnimationsModule,
+ 
    
     
    
