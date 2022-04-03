@@ -1,10 +1,7 @@
 <div class="container">
   <div class="d-flex justify-content-end">
-<<<<<<< HEAD
-    <button class="btn btn-outline-primary"> Add Admin</button>
-=======
-  <button class="btn btn-outline-primary" routerLink="/ajouter_admin"> Add Admin</button>
->>>>>>> 4c3da10a123469a504b6f0e6fc0142a229bfb848
+
+    <button class="btn btn-outline-primary" routerLink="/ajouter_admin"> Add Admin</button>
   </div>
   <div class="list">
     <div class="list-nav">
@@ -21,91 +18,18 @@
 
 
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-md-3" *ngFor="let admin of admins;">
 
         <div class="card">
           <div class="card-img">
             <img src="../assets/img/photo_profil.jpg" class="card-img-top">
           </div>
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">{{admin.firstName}}</h5>
             <div class="card-body-buttom">
               <div class="row">
                 <div class="col">
-                  <button class="btn btn-outline-primary" id="btn1">Consult</button>
-                </div>
-                <div class="col">
-                  <button class="btn btn-primary"> execlude</button>
-                </div>
-              </div>
-
-
-
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-
-        <div class="card">
-          <div class="card-img">
-            <img src="../assets/img/photo_profil.jpg" class="card-img-top">
-          </div>
-
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <div class="card-body-buttom">
-              <div class="row">
-                <div class="col">
-                  <button class="btn btn-outline-primary">Consult</button>
-                </div>
-                <div class="col">
-                  <button class="btn btn-primary"> execlude</button>
-                </div>
-              </div>
-
-
-
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-
-        <div class="card">
-          <div class="card-img">
-            <img src="../assets/img/photo_profil.jpg" class="card-img-top">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <div class="card-body-buttom">
-              <div class="row">
-                <div class="col">
-                  <button class="btn btn-outline-primary">Consult</button>
-                </div>
-                <div class="col">
-                  <button class="btn btn-primary"> execlude</button>
-                </div>
-              </div>
-
-
-
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-
-        <div class="card">
-          <div class="card-img">
-            <img src="../assets/img/photo_profil.jpg" class="card-img-top">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <div class="card-body-buttom">
-              <div class="row">
-                <div class="col">
-                  <button class="btn btn-outline-primary">Consult</button>
+                  <button class="btn btn-outline-primary" id="btn1" routerLink="/UserProfil/{{admin.id}}">Consult</button>
                 </div>
                 <div class="col">
                   <button class="btn btn-primary"> execlude</button>

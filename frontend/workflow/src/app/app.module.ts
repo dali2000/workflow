@@ -34,7 +34,7 @@ const routes: Routes = [
   { path: 'add_entreprise', component: AddEntrepriseComponent },
   { path: 'list_employee', component: ListEmployeeComponent },
 
-  { path: 'UserProfil', component: ProfilComponent },
+  { path: 'UserProfil/:id', component: ProfilComponent },
 
 
 ];  // <-- import RouterModule and define routes
