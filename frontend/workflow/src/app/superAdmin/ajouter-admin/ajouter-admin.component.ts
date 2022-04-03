@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-ajouter-admin',
@@ -7,11 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AjouterAdminComponent implements OnInit {
 
-  constructor() { }
+  constructor(private http: HttpClient, private router: Router) { }
   form={
-    email:'',
+    Email:'',
     password:'',
-    role:''
+    role:'',
+    firstName:'',
+    lastName:'',
     }
 
   
@@ -24,8 +28,10 @@ export class AjouterAdminComponent implements OnInit {
   
   }
 AddAdmin(){
-
-  if(this.form.email==""){
+  this.http.post('http://localhost:3000/user/addUser',this.form).subscribe(res => {
+    console.log(res)
+  });
+  if(this.form.Email==""){
     this.message = "Email is required"
     this.test =true
     console.log(this.message)
@@ -43,6 +49,8 @@ AddAdmin(){
     else{
       this.message1 = ""
       this.test1 = false
+
+
       }
     console.log(this.form)
   }
